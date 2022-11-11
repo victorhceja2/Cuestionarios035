@@ -3,12 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
  namespace MvcMovie.Models
 {
-    public class CuesD
+    public class Campana
     {
         public int Id { get; set; }
 
         [Required]
+        public int Id_Usuario {get; set;}
         public int Id_CuesH {get; set;}
+
 
         [Required]
         [DataType(DataType.Date)]
@@ -16,13 +18,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
         [StringLength(200, MinimumLength = 3)]
         [Required]
-        public string? Preguntaa { get; set; }
+        public string? Comentarios { get; set; }
+    
+        public int? Dias { get; set; }
         
-        [StringLength(60, MinimumLength = 3)]
-        [Required]
-        public string? Respuesta { get; set; }
-
-         
         [Required]
         public int? Estatus { get; set; }
     }
