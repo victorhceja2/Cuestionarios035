@@ -16,6 +16,46 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/usuario/Cuestionarios035Net/MvcC035.1
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesD/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0QvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesD/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0QvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesD/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0QvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesD/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0QvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0QvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesH/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0gvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesH/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0gvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesH/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0gvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesH/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0gvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesH/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0gvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/HelloWorld/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVsbG9Xb3JsZC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

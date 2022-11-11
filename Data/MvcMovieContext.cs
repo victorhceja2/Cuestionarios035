@@ -17,4 +17,8 @@ using MvcMovie.Models;
         public DbSet<MvcMovie.Models.Usuario> Usuario { get; set; } = default!;
 
         public DbSet<MvcMovie.Models.Pregunta> Pregunta { get; set; } = default!;
+
+        public DbSet<MvcMovie.Models.CuesH> CuesH { get; set; } = default!;
+
+        public DbSet<MvcMovie.Models.CuesD> CuesD { get; set; } = default!;
     }
