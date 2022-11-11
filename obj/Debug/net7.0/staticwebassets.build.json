@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QZrLeHE1JSvyCvfPKrg8NhJCjUbbD9SgR7ergcXQAqM=",
+  "Hash": "+tKoxbZDcIDeF1oMvem+mSsLpnQ5Fugp0m7epu+XEpQ=",
   "Source": "MvcMovie",
   "BasePath": "_content/MvcMovie",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/usuario/Cuestionarios035Net/MvcC035.1/obj/Debug/net7.0/scopedcss/projectbundle/MvcMovie.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/usuario/Cuestionarios035Net/MvcC035.1/wwwroot/035_2-1-2.png",
+      "SourceId": "MvcMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/usuario/Cuestionarios035Net/MvcC035.1/wwwroot/",
+      "BasePath": "_content/MvcMovie",
+      "RelativePath": "035_2-1-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/035_2-1-2.png"
     },
     {
       "Identity": "/Users/usuario/Cuestionarios035Net/MvcC035.1/wwwroot/css/site.css",

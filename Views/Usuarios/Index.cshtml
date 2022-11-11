@@ -1,13 +1,13 @@
 @model IEnumerable<MvcMovie.Models.Usuario>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Inicio";
 }
 
-<h1>Index</h1>
+<h1>Inicio</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Crear Nuevo</a>
 </p>
 <table class="table">
     <thead>
@@ -27,30 +27,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.NombreEmpresa)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NumeroEmpleados)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RFC)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Domicilio)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Colonia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Ciudad)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Pais)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Giro)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
+  
             <th>
                 @Html.DisplayNameFor(model => model.FechaAlta)
             </th>
@@ -75,37 +52,14 @@
             <td>
                 @Html.DisplayFor(modelItem => item.NombreEmpresa)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumeroEmpleados)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RFC)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Domicilio)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Colonia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ciudad)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Pais)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Giro)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
+
             <td>
                 @Html.DisplayFor(modelItem => item.FechaAlta)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Borrar</a>
             </td>
         </tr>
 }

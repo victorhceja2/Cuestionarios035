@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/MvcMovie.bundle.scp.css"
     },
     {
+      "Id": "/Users/usuario/Cuestionarios035Net/MvcC035.1/wwwroot/035_2-1-2.png",
+      "PackagePath": "staticwebassets/035_2-1-2.png"
+    },
+    {
       "Id": "/Users/usuario/Cuestionarios035Net/MvcC035.1/wwwroot/Logo_035.png",
       "PackagePath": "staticwebassets/Logo_035.png"
     },
