@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jG1UyPg4zEOxKhmWsy9n4ZcUz1Dl6fn1atouI1Y3o/+yjcm3kMW8PFPCyP7dTmtY/mWDQ0wapHfStg5g55qJrA==",
+  "dgSpecHash": "fCSqS+jaJ0d4n0zvGA9YyhVJr7VCVmBTa86uV03Ja3d4GTtTzbrUyHhgO1WRJhmj7XNeVLgEcuLF8XMZqD/w2w==",
   "success": true,
-  "projectFilePath": "/Users/usuario/Cuestionarios035Net/MvcMovie/MvcMovie.csproj",
+  "projectFilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/MvcMovie.csproj",
   "expectedPackageFiles": [
     "/Users/usuario/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/usuario/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

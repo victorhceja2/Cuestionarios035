@@ -10787,11 +10787,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/usuario/Cuestionarios035Net/MvcMovie/MvcMovie.csproj",
+      "projectUniqueName": "/Users/usuario/Cuestionarios035Net/MvcC035.1/MvcMovie.csproj",
       "projectName": "MvcMovie",
-      "projectPath": "/Users/usuario/Cuestionarios035Net/MvcMovie/MvcMovie.csproj",
+      "projectPath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/MvcMovie.csproj",
       "packagesPath": "/Users/usuario/.nuget/packages/",
-      "outputPath": "/Users/usuario/Cuestionarios035Net/MvcMovie/obj/",
+      "outputPath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/usuario/.nuget/NuGet/NuGet.Config"
