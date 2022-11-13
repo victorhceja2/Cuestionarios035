@@ -16555,6 +16555,11 @@
   "RootNamespace": "MvcMovie",
   "Documents": [
     {
+      "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/ProcesoFormulario/Delete.cshtml",
+      "TargetPath": "Views\\ProcesoFormulario\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesD/Index.cshtml",
       "TargetPath": "Views\\CuesD\\Index.cshtml",
       "FileKind": "mvc"
@@ -16562,6 +16567,11 @@
     {
       "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso/Details.cshtml",
+      "TargetPath": "Views\\Proceso\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16655,6 +16665,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso/Index.cshtml",
+      "TargetPath": "Views\\Proceso\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Preguntas/Edit.cshtml",
       "TargetPath": "Views\\Preguntas\\Edit.cshtml",
       "FileKind": "mvc"
@@ -16680,6 +16695,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/ProcesoFormulario/Details.cshtml",
+      "TargetPath": "Views\\ProcesoFormulario\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Movies/Details.cshtml",
       "TargetPath": "Views\\Movies\\Details.cshtml",
       "FileKind": "mvc"
@@ -16690,8 +16710,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/ProcesoFormulario/Create.cshtml",
+      "TargetPath": "Views\\ProcesoFormulario\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesH/Index.cshtml",
       "TargetPath": "Views\\CuesH\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso/Create.cshtml",
+      "TargetPath": "Views\\Proceso\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16702,6 +16732,11 @@
     {
       "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesD/Details.cshtml",
       "TargetPath": "Views\\CuesD\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso/Edit.cshtml",
+      "TargetPath": "Views\\Proceso\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16740,6 +16775,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/ProcesoFormulario/Edit.cshtml",
+      "TargetPath": "Views\\ProcesoFormulario\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Usuarios/Delete.cshtml",
       "TargetPath": "Views\\Usuarios\\Delete.cshtml",
       "FileKind": "mvc"
@@ -16750,8 +16790,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso/Delete.cshtml",
+      "TargetPath": "Views\\Proceso\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/ProcesoFormulario/Index.cshtml",
+      "TargetPath": "Views\\ProcesoFormulario\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

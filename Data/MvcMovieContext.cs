@@ -25,4 +25,8 @@ using MvcMovie.Models;
         public DbSet<MvcMovie.Models.RespD> RespD { get; set; } = default!;
 
         public DbSet<MvcMovie.Models.Campana> Campana { get; set; } = default!;
+
+        public DbSet<MvcMovie.Models.Proceso> Proceso { get; set; } = default!;
+
+        public DbSet<MvcMovie.Models.Formulario> Formulario { get; set; } = default!;
     }
