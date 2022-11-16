@@ -63,9 +63,6 @@ namespace MvcMovie.Controllers
 
 
 
-                 /*IQueryable<string> genreQuery = from m in _context.Movie
-                                        orderby m.Genre
-                                        select m.Genre;*/
                 
                 var sQuery = from m in _context.Campana
                                             join mu in _context.Usuario on m.Id_Usuario equals mu.Id
