@@ -116,12 +116,14 @@ namespace MvcMovie.Controllers
 
                 }
  
-
                 proceso.Url ="https://";
                 _context.Add(proceso);
+
                 await _context.SaveChangesAsync();
+      
                 return RedirectToAction(nameof(Index));
             }
+
             return View(proceso);
         }
 

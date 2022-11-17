@@ -606,3 +606,6 @@
 /Users/usuario/Cuestionarios035Net/MvcC035.1/obj/Debug/net7.0/MvcMovie.pdb
 /Users/usuario/Cuestionarios035Net/MvcC035.1/obj/Debug/net7.0/MvcMovie.genruntimeconfig.cache
 /Users/usuario/Cuestionarios035Net/MvcC035.1/obj/Debug/net7.0/ref/MvcMovie.dll
+/Users/usuario/Cuestionarios035Net/MvcC035.1/bin/Debug/net7.0/MailKit.dll
+/Users/usuario/Cuestionarios035Net/MvcC035.1/bin/Debug/net7.0/MimeKit.dll
+/Users/usuario/Cuestionarios035Net/MvcC035.1/bin/Debug/net7.0/BouncyCastle.Crypto.dll
