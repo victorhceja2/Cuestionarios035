@@ -31,6 +31,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.FechaAlta)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nivel)
+            </th>            
             <th></th>
         </tr>
     </thead>
@@ -56,6 +59,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.FechaAlta)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nivel)
+            </td>        
             <td>
                 <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@item.Id">Editar</a> 
                 <a class="btn btn-primary btn-sm" asp-action="Details" asp-route-id="@item.Id">Detalles</a> 

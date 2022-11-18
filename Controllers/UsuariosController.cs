@@ -55,7 +55,7 @@ namespace MvcMovie.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Apellido,CorreoElectronico,NumeroContrato,NombreEmpresa,NumeroEmpleados,RFC,Domicilio,Colonia,Ciudad,Pais,Giro,Password,FechaAlta")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,Apellido,CorreoElectronico,NumeroContrato,NombreEmpresa,NumeroEmpleados,RFC,Domicilio,Colonia,Ciudad,Pais,Giro,Password,FechaAlta,Nivel")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace MvcMovie.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Apellido,CorreoElectronico,NumeroContrato,NombreEmpresa,NumeroEmpleados,RFC,Domicilio,Colonia,Ciudad,Pais,Giro,Password,FechaAlta")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Apellido,CorreoElectronico,NumeroContrato,NombreEmpresa,NumeroEmpleados,RFC,Domicilio,Colonia,Ciudad,Pais,Giro,Password,FechaAlta,Nivel")] Usuario usuario)
         {
             if (id != usuario.Id)
             {
