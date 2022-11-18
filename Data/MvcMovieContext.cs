@@ -29,4 +29,6 @@ using MvcMovie.Models;
         public DbSet<MvcMovie.Models.Proceso> Proceso { get; set; } = default!;
 
         public DbSet<MvcMovie.Models.Formulario> Formulario { get; set; } = default!;
+
+        public DbSet<MvcMovie.Models.Login> Login { get; set; } = default!;
     }

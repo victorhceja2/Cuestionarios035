@@ -9,94 +9,92 @@ using MvcMovie.Models;
 
 namespace MvcMovie.Controllers
 {
-    public class CuesHController : Controller
+    public class LoginController : Controller
     {
         private readonly MvcMovieContext _context;
 
-        public CuesHController(MvcMovieContext context)
+        public LoginController(MvcMovieContext context)
         {
             _context = context;
         }
 
-        // GET: CuesH
+        // GET: Login
         public async Task<IActionResult> Index()
         {
-             var loginsesion= HttpContext.Session.GetObject<Login>("ObjetoComplejo");
-             if(loginsesion.Nivel ==0){
-                return _context.CuesH != null ? 
-                View(await _context.CuesH.ToListAsync()) :
-                Problem("Entity set 'MvcMovieContext.CuesH'  is null.");
-
-             }
-            else{
-                    return RedirectToAction("Index","Home");}
-
+              return _context.Login != null ? 
+                          View(await _context.Login.ToListAsync()) :
+                          Problem("Entity set 'MvcMovieContext.Login'  is null.");
         }
 
-        // GET: CuesH/Details/5
+        // GET: Login/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.CuesH == null)
+            if (id == null || _context.Login == null)
             {
                 return NotFound();
             }
 
-            var cuesH = await _context.CuesH
+            var login = await _context.Login
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (cuesH == null)
+            if (login == null)
             {
                 return NotFound();
             }
 
-            return View(cuesH);
+            return View(login);
         }
 
-        // GET: CuesH/Create
+        // GET: Login/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: CuesH/Create
+        // POST: Login/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Id_Usuario,FechaAlta,Descripcion,Estatus")] CuesH cuesH)
+        public async Task<IActionResult> Create([Bind("Id,Id_Usuario,Usuario,Password,FechaLogin,FechaLogout,Nivel")] Login login)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(cuesH);
+                login.Id_Usuario = 1; //Jalar el valor de usuario
+                login.FechaLogin = DateTime.Now;
+                login.Nivel = 0; //Jalar el valor de usuario
+                HttpContext.Session.SetObject("ObjetoComplejo", login);
+                _context.Add(login);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                //return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index","Home");
             }
-            return View(cuesH);
+            return View(login);
         }
 
-        // GET: CuesH/Edit/5
+        // GET: Login/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.CuesH == null)
+            if (id == null || _context.Login == null)
             {
                 return NotFound();
             }
 
-            var cuesH = await _context.CuesH.FindAsync(id);
-            if (cuesH == null)
+            var login = await _context.Login.FindAsync(id);
+            if (login == null)
             {
                 return NotFound();
             }
-            return View(cuesH);
+            return View(login);
         }
 
-        // POST: CuesH/Edit/5
+        // POST: Login/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Id_Usuario,FechaAlta,Descripcion,Estatus")] CuesH cuesH)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Id_Usuario,Usuario,Password,FechaLogin,FechaLogout,Nivel")] Login login)
         {
-            if (id != cuesH.Id)
+            if (id != login.Id)
             {
                 return NotFound();
             }
@@ -105,12 +103,12 @@ namespace MvcMovie.Controllers
             {
                 try
                 {
-                    _context.Update(cuesH);
+                    _context.Update(login);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CuesHExists(cuesH.Id))
+                    if (!LoginExists(login.Id))
                     {
                         return NotFound();
                     }
@@ -121,49 +119,49 @@ namespace MvcMovie.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(cuesH);
+            return View(login);
         }
 
-        // GET: CuesH/Delete/5
+        // GET: Login/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.CuesH == null)
+            if (id == null || _context.Login == null)
             {
                 return NotFound();
             }
 
-            var cuesH = await _context.CuesH
+            var login = await _context.Login
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (cuesH == null)
+            if (login == null)
             {
                 return NotFound();
             }
 
-            return View(cuesH);
+            return View(login);
         }
 
-        // POST: CuesH/Delete/5
+        // POST: Login/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.CuesH == null)
+            if (_context.Login == null)
             {
-                return Problem("Entity set 'MvcMovieContext.CuesH'  is null.");
+                return Problem("Entity set 'MvcMovieContext.Login'  is null.");
             }
-            var cuesH = await _context.CuesH.FindAsync(id);
-            if (cuesH != null)
+            var login = await _context.Login.FindAsync(id);
+            if (login != null)
             {
-                _context.CuesH.Remove(cuesH);
+                _context.Login.Remove(login);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CuesHExists(int id)
+        private bool LoginExists(int id)
         {
-          return (_context.CuesH?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Login?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
