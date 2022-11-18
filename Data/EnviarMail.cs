@@ -28,6 +28,7 @@ namespace MvcMovie.Models
 
             // send email
             using var smtp = new SmtpClient();
+            smtp.Timeout = 200;
             smtp.Connect("mail.035.com.mx", 465, SecureSocketOptions.StartTls);
             smtp.Authenticate("035netcore@035.com.mx", "?%lf^n273P^2");
             smtp.Send(email);

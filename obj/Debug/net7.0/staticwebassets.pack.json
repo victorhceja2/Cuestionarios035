@@ -29,6 +29,18 @@
       "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
+      "Id": "/Users/usuario/Cuestionarios035Net/MvcC035.1/wwwroot/lib/bootstrap/dist/css/_bootswatch.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/_bootswatch.scss"
+    },
+    {
+      "Id": "/Users/usuario/Cuestionarios035Net/MvcC035.1/wwwroot/lib/bootstrap/dist/css/_variables.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/_variables.scss"
+    },
+    {
+      "Id": "/Users/usuario/Cuestionarios035Net/MvcC035.1/wwwroot/lib/bootstrap/dist/css/bootstrap 2.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap 2.css"
+    },
+    {
       "Id": "/Users/usuario/Cuestionarios035Net/MvcC035.1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
@@ -131,6 +143,10 @@
     {
       "Id": "/Users/usuario/Cuestionarios035Net/MvcC035.1/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/usuario/Cuestionarios035Net/MvcC035.1/wwwroot/lib/bootstrap/dist/css/bootstrap.min 2.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min 2.css"
     },
     {
       "Id": "/Users/usuario/Cuestionarios035Net/MvcC035.1/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",

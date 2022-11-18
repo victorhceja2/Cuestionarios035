@@ -1,4 +1,4 @@
-@model MvcMovie.Models.CuesD
+@model MvcMovie.Models.Proceso
 
 @{
     ViewData["Title"] = "Edit";
@@ -6,12 +6,13 @@
 
 <h2>
     Edición
-    <small class="text-muted">detalles de encuestas</small>
+    <small class="text-muted">Procesos de encuestas</small>
     </h2>
 
 <ol class="breadcrumb">
-  <li class="breadcrumb-item active">Detalles de encuestas</li>
+  <li class="breadcrumb-item active">Editar Procesos</li>
 </ol>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -19,9 +20,9 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="Id_CuesH" class="control-label"></label>
-                <input asp-for="Id_CuesH" class="form-control" />
-                <span asp-validation-for="Id_CuesH" class="text-danger"></span>
+                <label asp-for="Id_Campana" class="control-label"></label>
+                <input asp-for="Id_Campana" class="form-control" />
+                <span asp-validation-for="Id_Campana" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FechaAlta" class="control-label"></label>
@@ -29,22 +30,20 @@
                 <span asp-validation-for="FechaAlta" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Preguntaa" class="control-label"></label>
-                <input asp-for="Preguntaa" class="form-control" />
-                <span asp-validation-for="Preguntaa" class="text-danger"></span>
+                <label asp-for="Url" class="control-label"></label>
+                <input asp-for="Url" class="form-control" />
+                <span asp-validation-for="Url" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Respuesta" class="control-label"></label>
-                <input asp-for="Respuesta" class="form-control" />
-                <span asp-validation-for="Respuesta" class="text-danger"></span>
+                <label asp-for="Comentarios" class="control-label"></label>
+                <input asp-for="Comentarios" class="form-control" />
+                <span asp-validation-for="Comentarios" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Estatus" class="control-label"></label>
                 <input asp-for="Estatus" class="form-control" />
                 <span asp-validation-for="Estatus" class="text-danger"></span>
             </div>
-
-
             <div class="form-group">
 
                 <ol class="breadcrumb">
@@ -52,7 +51,7 @@
                 <li class="breadcrumb-item"><a class="btn btn-secondary" asp-action="Index">Regresar  </a></li>
 
                 </ol>
-            </div> 
+            </div>  
         </form>
     </div>
 </div>

@@ -4,10 +4,11 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Preguntas</h1>
+<h3>Cuestionario Detalles</h3>
+
 
 <p>
-    <a asp-action="Create">Nueva Pregunta</a>
+    <a  class="btn btn-outline-primary" asp-action="Create">Crear Detalle</a>
 </p>
 <table class="table">
     <thead>
@@ -49,9 +50,9 @@
                 @Html.DisplayFor(modelItem => item.Estatus)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Borrar</a>
+                <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a class="btn btn-primary btn-sm" asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
+                <a class="btn btn-primary btn-sm" asp-action="Delete" asp-route-id="@item.Id">Borrar</a>
             </td>
         </tr>
 }

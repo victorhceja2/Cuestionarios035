@@ -4,9 +4,14 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Crear</h1>
+<h2>
+    Creación
+    <small class="text-muted">de encabezado de encuestas</small>
+    </h2>
 
-<h4>CuesH</h4>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item active">Encabezados</li>
+</ol>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -32,16 +37,21 @@
                 <input asp-for="Estatus" class="form-control" />
                 <span asp-validation-for="Estatus" class="text-danger"></span>
             </div>
+
+
             <div class="form-group">
-                <input type="submit" value="Crear" class="btn btn-primary"  />
+
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><input class="btn btn-primary" type="submit" value="Crear   "/></li>
+                <li class="breadcrumb-item"><a class="btn btn-secondary" asp-action="Index">Regresar</a></li>
+
+                </ol>
             </div>
+            
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Crear</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
