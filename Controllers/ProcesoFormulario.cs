@@ -21,9 +21,20 @@ namespace MvcMovie.Controllers
         // GET: ProcesoFormulario
         public async Task<IActionResult> Index()
         {
+            var loginsesion= HttpContext.Session.GetObject<Login>("ObjetoComplejo");
+            if(loginsesion == null)
+             {
+                return RedirectToAction("Create","Login");
+             }         
+             if(loginsesion.Nivel == 5)
+             {return RedirectToAction("Create","Login");}
+             if(loginsesion.Nivel <= 3){    
               return _context.Formulario != null ? 
                           View(await _context.Formulario.ToListAsync()) :
                           Problem("Entity set 'MvcMovieContext.Formulario'  is null.");
+                     }
+            else{
+                    return RedirectToAction("Index","Home");}                     
         }
 
         // GET: ProcesoFormulario/Details/5

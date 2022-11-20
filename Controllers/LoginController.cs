@@ -21,9 +21,20 @@ namespace MvcMovie.Controllers
         // GET: Login
         public async Task<IActionResult> Index()
         {
+            var loginsesion= HttpContext.Session.GetObject<Login>("ObjetoComplejo");
+            if(loginsesion == null)
+             {
+                return RedirectToAction("Create","Login");
+             }         
+             if(loginsesion.Nivel == 5)
+             {return RedirectToAction("Create","Login");}
+             if(loginsesion.Nivel == 0){                
               return _context.Login != null ? 
                           View(await _context.Login.ToListAsync()) :
                           Problem("Entity set 'MvcMovieContext.Login'  is null.");
+                     }
+            else{
+                    return RedirectToAction("Index","Home");}                               
         }
 
         // GET: Login/Details/5
@@ -59,16 +70,60 @@ namespace MvcMovie.Controllers
         {
             if (ModelState.IsValid)
             {
-                login.Id_Usuario = 1; //Jalar el valor de usuario
-                login.FechaLogin = DateTime.Now;
-                login.Nivel = 0; //Jalar el valor de usuario
-                HttpContext.Session.SetObject("ObjetoComplejo", login);
-                _context.Add(login);
-                await _context.SaveChangesAsync();
-                //return RedirectToAction(nameof(Index));
-                return RedirectToAction("Index","Home");
+                
+                var sQuery = from m in _context.Usuario
+                                        where m.Nombre == login.Usuario
+                                        && m.Password == login.Password
+                                        orderby m.Nombre
+                                    select new
+                                    {
+                                        m.Id,
+                                        m.Nivel,
+                                        m.Nombre,
+                                        m.Password
+                                    };
+                    if(sQuery.Count() > 0){
+                        foreach(var reg in sQuery)
+                        {
+                            login.Id_Usuario = reg.Id; //Jalar el valor de usuario
+                            login.FechaLogin = DateTime.Now;
+                            login.Nivel = reg.Nivel; //Jalar el valor de usuario
+                            login.Usuario = reg.Nombre;
+                            login.Password = reg.Password;
+                            HttpContext.Session.Clear();
+                            HttpContext.Session.SetObject("ObjetoComplejo", login);
+                        }
+                    }
+                    else{
+                        return View(login);
+                    }
+
+                    _context.Add(login);
+                    await _context.SaveChangesAsync();
+                    //return RedirectToAction(nameof(Index));
+                    return RedirectToAction("Index","Home");
             }
             return View(login);
+        }
+
+        public IActionResult Logout()
+        {
+            Login login = HttpContext.Session.GetObject<Login>("ObjetoComplejo");
+            if(login == null)
+            {
+                return RedirectToAction("Create","Login");
+            }
+            //login.Id_Usuario = 0;
+            //login.Usuario=string.Empty;
+            //login.Password = string.Empty;
+            login.FechaLogout = DateTime.Now;
+            login.Nivel = 5;
+
+            _context.Add(login);
+            _context.SaveChangesAsync();
+            HttpContext.Session.SetObject("ObjetoComplejo", login);
+            HttpContext.Session.Clear();
+            return View();
         }
 
         // GET: Login/Edit/5
@@ -137,7 +192,18 @@ namespace MvcMovie.Controllers
                 return NotFound();
             }
 
-            return View(login);
+          
+                login.Id_Usuario = 0;
+                login.Usuario=string.Empty;
+                login.Password = string.Empty;
+                login.FechaLogout = DateTime.Now;
+                login.Nivel = 5;
+                _context.Add(login);
+                await _context.SaveChangesAsync();
+                //_context.SaveChangesAsync();
+                HttpContext.Session.SetObject("ObjetoComplejo", login);
+                return RedirectToAction("Index","Home");
+            
         }
 
         // POST: Login/Delete/5
@@ -152,11 +218,21 @@ namespace MvcMovie.Controllers
             var login = await _context.Login.FindAsync(id);
             if (login != null)
             {
-                _context.Login.Remove(login);
+                //_context.Login.Remove(login);
+          
+                login.Id_Usuario = 0;
+                login.Usuario=string.Empty;
+                login.Password = string.Empty;
+                login.FechaLogout = DateTime.Now;
+                login.Nivel = 5;
+                _context.Add(login);
+                await _context.SaveChangesAsync();
+                //_context.SaveChangesAsync();
+                HttpContext.Session.SetObject("ObjetoComplejo", login);
+                return View();
             }
             
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index","Home");
         }
 
         private bool LoginExists(int id)

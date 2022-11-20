@@ -22,7 +22,14 @@ namespace MvcMovie.Controllers
         public async Task<IActionResult> Index()
         {
              var loginsesion= HttpContext.Session.GetObject<Login>("ObjetoComplejo");
-             if(loginsesion.Nivel ==0){
+            if(loginsesion == null)
+             {
+                return RedirectToAction("Create","Login");
+             }         
+             if(loginsesion.Nivel == 5)
+             {return RedirectToAction("Create","Login");}
+
+             if(loginsesion.Nivel <= 1){
                 return _context.CuesH != null ? 
                 View(await _context.CuesH.ToListAsync()) :
                 Problem("Entity set 'MvcMovieContext.CuesH'  is null.");

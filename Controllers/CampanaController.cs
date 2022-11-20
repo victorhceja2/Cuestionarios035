@@ -21,9 +21,20 @@ namespace MvcMovie.Controllers
         // GET: Campana
         public async Task<IActionResult> Index()
         {
+            var loginsesion= HttpContext.Session.GetObject<Login>("ObjetoComplejo");
+            if(loginsesion == null)
+             {
+                return RedirectToAction("Create","Login");
+             }         
+             if(loginsesion.Nivel == 5)
+             {return RedirectToAction("Create","Login");}
+             if(loginsesion.Nivel <= 1){
               return _context.Campana != null ? 
                           View(await _context.Campana.ToListAsync()) :
                           Problem("Entity set 'MvcMovieContext.Campana'  is null.");
+             }
+            else{
+                    return RedirectToAction("Index","Home");}                            
         }
 
         // GET: Campana/Details/5

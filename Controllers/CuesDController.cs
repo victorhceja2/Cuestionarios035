@@ -21,9 +21,20 @@ namespace MvcMovie.Controllers
         // GET: CuesD
         public async Task<IActionResult> Index()
         {
+            var loginsesion= HttpContext.Session.GetObject<Login>("ObjetoComplejo");
+            if(loginsesion == null)
+             {
+                return RedirectToAction("Create","Login");
+             }         
+             if(loginsesion.Nivel == 5)
+             {return RedirectToAction("Create","Login");}
+             if(loginsesion.Nivel <= 1){
               return _context.CuesD != null ? 
                           View(await _context.CuesD.ToListAsync()) :
                           Problem("Entity set 'MvcMovieContext.CuesD'  is null.");
+             }
+            else{
+                    return RedirectToAction("Index","Home");}                          
         }
 
         // GET: CuesD/Details/5
