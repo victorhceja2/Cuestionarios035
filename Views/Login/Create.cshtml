@@ -1,0 +1,48 @@
+@model MvcMovie.Models.Login
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>
+    Login
+    <small class="text-muted">de usuario</small>
+    </h2>
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item active">Login</li>
+</ol>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Usuario" class="control-label" >Nombre de usuario o correo electronico</label>
+                <input asp-for="Usuario" class="form-control" />
+                <span asp-validation-for="Usuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" type="password" class="form-control"  />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><input class="btn btn-primary" type="submit" value="Login   "/></li>
+                <li class="breadcrumb-item"><a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Regresar</a></li>
+
+                </ol>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

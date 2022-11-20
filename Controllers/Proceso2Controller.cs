@@ -21,9 +21,20 @@ namespace MvcMovie.Controllers
         // GET: Proceso2
         public async Task<IActionResult> Index()
         {
+            var loginsesion= HttpContext.Session.GetObject<Login>("ObjetoComplejo");
+            if(loginsesion == null)
+             {
+                return RedirectToAction("Create","Login");
+             }         
+             if(loginsesion.Nivel == 5)
+             {return RedirectToAction("Create","Login");}
+             if(loginsesion.Nivel <= 1){            
               return _context.Proceso != null ? 
                           View(await _context.Proceso.ToListAsync()) :
                           Problem("Entity set 'MvcMovieContext.Proceso'  is null.");
+             }
+            else{
+                    return RedirectToAction("Index","Home");}                               
         }
 
         // GET: Proceso2/Details/5

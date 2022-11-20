@@ -6,18 +6,26 @@ using MvcMovie.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 
-//if (builder.Environment.IsDevelopment())
-//{
+if (builder.Environment.IsDevelopment())
+{
     builder.Services.AddDbContext<MvcMovieContext>(options =>
         options.UseSqlite(builder.Configuration.GetConnectionString("MvcMovieContext")));
-//}
-//else
-//{
-//    builder.Services.AddDbContext<MvcMovieContext>(options =>
-//        options.UseSqlServer(builder.Configuration.GetConnectionString("ProductionMvcMovieContext")));
-//}
+}
+else
+{    builder.Services.AddDbContext<MvcMovieContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("ProductionMvcMovieContext")));
+}
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromSeconds(10);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 var app = builder.Build();
 
@@ -42,6 +50,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",

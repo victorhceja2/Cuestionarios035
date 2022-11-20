@@ -21,9 +21,23 @@ namespace MvcMovie.Controllers
         // GET: CuesH
         public async Task<IActionResult> Index()
         {
-              return _context.CuesH != null ? 
-                          View(await _context.CuesH.ToListAsync()) :
-                          Problem("Entity set 'MvcMovieContext.CuesH'  is null.");
+             var loginsesion= HttpContext.Session.GetObject<Login>("ObjetoComplejo");
+            if(loginsesion == null)
+             {
+                return RedirectToAction("Create","Login");
+             }         
+             if(loginsesion.Nivel == 5)
+             {return RedirectToAction("Create","Login");}
+
+             if(loginsesion.Nivel <= 1){
+                return _context.CuesH != null ? 
+                View(await _context.CuesH.ToListAsync()) :
+                Problem("Entity set 'MvcMovieContext.CuesH'  is null.");
+
+             }
+            else{
+                    return RedirectToAction("Index","Home");}
+
         }
 
         // GET: CuesH/Details/5

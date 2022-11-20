@@ -21,9 +21,20 @@ namespace MvcMovie.Controllers
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
+            var loginsesion= HttpContext.Session.GetObject<Login>("ObjetoComplejo");
+            if(loginsesion == null)
+             {
+                return RedirectToAction("Create","Login");
+             }         
+             if(loginsesion.Nivel == 5)
+             {return RedirectToAction("Create","Login");}
+             if(loginsesion.Nivel <= 1){               
               return _context.Usuario != null ? 
                           View(await _context.Usuario.ToListAsync()) :
                           Problem("Entity set 'MvcMovieContext.Usuario'  is null.");
+             }
+            else{
+                    return RedirectToAction("Index","Home");}                           
         }
 
         // GET: Usuarios/Details/5
@@ -55,7 +66,7 @@ namespace MvcMovie.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Apellido,CorreoElectronico,NumeroContrato,NombreEmpresa,NumeroEmpleados,RFC,Domicilio,Colonia,Ciudad,Pais,Giro,Password,FechaAlta")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,Apellido,CorreoElectronico,NumeroContrato,NombreEmpresa,NumeroEmpleados,RFC,Domicilio,Colonia,Ciudad,Pais,Giro,Password,FechaAlta,Nivel")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +98,7 @@ namespace MvcMovie.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Apellido,CorreoElectronico,NumeroContrato,NombreEmpresa,NumeroEmpleados,RFC,Domicilio,Colonia,Ciudad,Pais,Giro,Password,FechaAlta")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Apellido,CorreoElectronico,NumeroContrato,NombreEmpresa,NumeroEmpleados,RFC,Domicilio,Colonia,Ciudad,Pais,Giro,Password,FechaAlta,Nivel")] Usuario usuario)
         {
             if (id != usuario.Id)
             {
