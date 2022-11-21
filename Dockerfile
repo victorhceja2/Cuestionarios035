@@ -3,7 +3,7 @@ WORKDIR /app
 COPY *.csproj ./
 COPY ./NuGet.Config ./
 #RUN dotnet restore --interactive
-RUN dotnet restore MvcMovie.csproj --configfile ./NuGet.Config
+RUN dotnet restore MvcMovie.csproj --configfile ./nuget.config
 COPY . ./
 RUN dotnet publish -c Release -o out
 
