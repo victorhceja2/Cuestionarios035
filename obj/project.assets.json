@@ -10911,6 +10911,7 @@
       "outputPath": "/Users/usuario/Cuestionarios035Net/MvcC035.1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
+        "/Users/usuario/Cuestionarios035Net/MvcC035.1/NuGet.Config",
         "/Users/usuario/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
