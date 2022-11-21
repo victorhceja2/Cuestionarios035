@@ -1,7 +1,7 @@
 FROM  mcr.microsoft.com/dotnet/sdk as build-env
 WORKDIR /app
 COPY *.csproj ./
-COPY ./NuGet.Config ./
+COPY ./nuget.config ./
 #RUN dotnet restore --interactive
 RUN dotnet restore MvcMovie.csproj --configfile ./nuget.config
 COPY . ./
