@@ -4,5 +4,5 @@ services:
     build: .
     container_name: cuestionarios035
     ports:
-      - "9001:80"
-      - "465:465"
+      - "9001:9001"
+      - "466:465"
