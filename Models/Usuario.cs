@@ -37,6 +37,8 @@ using System.ComponentModel.DataAnnotations.Schema;
         [DataType(DataType.Date)]
         public DateTime FechaAlta { get; set; }
 
+
+        [Required]
         public int Nivel { get; set; }
 
     }

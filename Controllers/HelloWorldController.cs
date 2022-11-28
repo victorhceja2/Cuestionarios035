@@ -22,7 +22,7 @@ namespace MvcMovie.Controllers
             ViewData["Message"] = "Hello " + name;
             ViewData["NumTimes"] = numTimes;
                     //Mandar Correo
-                EnviarMail.Send ("035NetCore@035.com.mx","victorhceja@gmail.com","prueba","<h1> Hola prueba mail </h1>");  
+                EnviarMail.Send ("victorhceja@gmail.com","prueba","<h1> Hola prueba mail </h1>");  
             return View();
         }
     }

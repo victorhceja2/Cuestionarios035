@@ -17,8 +17,9 @@ namespace MvcMovie.Models
    //         _appSettings = appSettings.Value;
    //     }
 
-        public static void Send(string from, string to, string subject, string html)
+        public static void Send(string to, string subject, string html)
         {
+            string from = "035netcore@035.com.mx";
             // create message
             var email = new MimeMessage();
             email.From.Add(MailboxAddress.Parse(from));
@@ -28,8 +29,8 @@ namespace MvcMovie.Models
 
             // send email
             using var smtp = new SmtpClient();
-            smtp.Timeout = 200;
-            smtp.Connect("mail.035.com.mx", 465, SecureSocketOptions.StartTls);
+            smtp.Timeout = 5000;
+            smtp.Connect("mail.035.com.mx", 465, SecureSocketOptions.Auto);
             smtp.Authenticate("035netcore@035.com.mx", "?%lf^n273P^2");
             smtp.Send(email);
             smtp.Disconnect(true);
