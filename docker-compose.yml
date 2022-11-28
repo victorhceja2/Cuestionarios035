@@ -1,0 +1,8 @@
+version: "3.4"
+services:
+  mvcmovie:
+    build: .
+    container_name: cuestionarios035
+    ports:
+      - "9001:80"
+      - "465:465"
