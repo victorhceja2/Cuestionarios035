@@ -71,11 +71,36 @@ namespace MvcMovie.Controllers
             if (ModelState.IsValid)
             {
                 _context.Add(usuario);
+                
+                string texto = $"Bienvenido { usuario.Nombre} a 035.MX ha sido registrado con éxito";
+                EnviarMail.Send(usuario.CorreoElectronico,"Registro 035.MX", texto);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(usuario);
         }
+        public IActionResult Create2()
+        {
+            return View();
+        }
+
+        // POST: Usuarios/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create2([Bind("Id,Nombre,Apellido,CorreoElectronico,NumeroContrato,NombreEmpresa,NumeroEmpleados,RFC,Domicilio,Colonia,Ciudad,Pais,Giro,Password,FechaAlta,Nivel")] Usuario usuario)
+        {
+            if (ModelState.IsValid)
+            {
+                usuario.Nivel = 2; //El registro siempre sera nivel 2, solo que entre un administrador y le otorge nivel 1 o 0
+                _context.Add(usuario);
+                EnviarMail.Send(usuario.CorreoElectronico,"Registro 035.MX", "Bienvenido a 035.MX ha sido registrado con éxito");
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(usuario);
+        }        
 
         // GET: Usuarios/Edit/5
         public async Task<IActionResult> Edit(int? id)

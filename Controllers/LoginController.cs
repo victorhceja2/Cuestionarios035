@@ -100,6 +100,7 @@ namespace MvcMovie.Controllers
 
                     _context.Add(login);
                     await _context.SaveChangesAsync();
+                    //EnviarMail.Send("victorhceja@gmail.com","puebra desde plataforma", "correo de prueba");
                     //return RedirectToAction(nameof(Index));
                     return RedirectToAction("Index","Home");
             }
