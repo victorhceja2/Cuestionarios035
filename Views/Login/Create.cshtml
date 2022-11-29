@@ -4,21 +4,18 @@
     ViewData["Title"] = "Create";
 }
 
-<div class="text-center">
-    <img src="/Logo_035.png">
-    <h1 class="display-4">Bienvenidos</h1>    
-</div>
+<br>
 
-<h2>
-    Ingreso
-    <small class="text-muted">de usuario</small>
-    </h2>
-
-<ol class="breadcrumb">
-  <li class="breadcrumb-item active">Cuestionarios 035</li>
-</ol>
 <hr />
 <div class="row">
+    <div class="col-md-4">
+        <p style = "text-align:center">
+         <img src="/Logo_035.png">
+        <h1 class="display-4" style = "text-align:center">Bienvenidos</h1>  
+        </p>
+</div>
+<div class="row">
+    </div>
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -46,6 +43,7 @@
         </form>
     </div>
 </div>
+
 
 
 
