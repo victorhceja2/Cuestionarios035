@@ -100,10 +100,12 @@ namespace MvcMovie.Controllers
 
                     _context.Add(login);
                     await _context.SaveChangesAsync();
+                    TempData["Message"] = "Activo";
                     //EnviarMail.Send("victorhceja@gmail.com","puebra desde plataforma", "correo de prueba");
                     //return RedirectToAction(nameof(Index));
                     return RedirectToAction("Index","Home");
             }
+
             return View(login);
         }
 
@@ -124,6 +126,7 @@ namespace MvcMovie.Controllers
             _context.SaveChangesAsync();
             HttpContext.Session.SetObject("ObjetoComplejo", login);
             HttpContext.Session.Clear();
+            TempData["Message"] = null;
             return View();
         }
 
