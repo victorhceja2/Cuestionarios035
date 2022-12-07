@@ -72,9 +72,47 @@ namespace MvcMovie.Controllers
             {
                 _context.Add(usuario);
                 
-                string texto = $"Bienvenido { usuario.Nombre} a 035.MX ha sido registrado con éxito";
-                EnviarMail.Send(usuario.CorreoElectronico,"Registro 035.MX", texto);
+               
+                
+                int idia = (int)DateTime.Now.Day; 
+                int imes = (int)DateTime.Now.Month;
+                int iano = (int)DateTime.Now.Year;
+                string sano2 = iano.ToString().Substring(2,2);
+                int ilen = 2;
+                string sdia = idia.ToString();
+                string smes = imes.ToString();
+                string sano = sano2;
+                sdia= sdia.PadLeft(ilen,'0').Substring(0,ilen);
+                smes= smes.PadLeft(ilen,'0').Substring(0,ilen);
+                sano= sano.PadLeft(ilen,'0').Substring(0,ilen);
+                Foliador folio = new Foliador();
+                folio.Origen="Contratos";
+                _context.Foliador.Add(folio);
+                _context.SaveChanges();
+                int lastFolioId = _context.Foliador.Max(item => item.Id);
+                string sLastFolio = lastFolioId.ToString();
+                sLastFolio = sLastFolio.PadLeft(4,'0').Substring(0,4);
+
+
+                
+                usuario.NumeroContrato = sdia + smes + sano + 
+                usuario.NumeroEmpleados + usuario.Giro.Substring(0,2) + 
+                usuario.Ciudad.Substring(0,2) + sLastFolio;
+
+                
+                
                 await _context.SaveChangesAsync();
+                Contrato contra = new Contrato();
+                int lastUserId = _context.Usuario.Max(item => item.Id);
+                contra.Id_Usuario = lastUserId;
+                contra.FechaAlta = DateTime.Now;
+                contra.NumeroContrato = usuario.NumeroContrato;
+                contra.Activo=1;
+                contra.Comentarios="Generado desde la alta de usuario";
+                _context.Contrato.Add(contra);
+                _context.SaveChanges();
+                string texto = $"Bienvenido { usuario.Nombre} a 035.MX ha sido registrado con éxito, con este numero de contrato: {usuario.NumeroContrato}";
+                EnviarMail.Send(usuario.CorreoElectronico,"Registro 035.MX", texto);
                 return RedirectToAction(nameof(Index));
             }
             return View(usuario);

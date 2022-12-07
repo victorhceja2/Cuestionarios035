@@ -31,4 +31,8 @@ using MvcMovie.Models;
         public DbSet<MvcMovie.Models.Formulario> Formulario { get; set; } = default!;
 
         public DbSet<MvcMovie.Models.Login> Login { get; set; } = default!;
+
+        public DbSet<MvcMovie.Models.Contrato> Contrato { get; set; } = default!;
+
+        public DbSet<MvcMovie.Models.Foliador> Foliador { get; set; } = default!;
     }
