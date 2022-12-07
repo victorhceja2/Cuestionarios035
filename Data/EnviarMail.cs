@@ -35,5 +35,7 @@ namespace MvcMovie.Models
             smtp.Send(email);
             smtp.Disconnect(true);
         }
+
+
     }
 }
