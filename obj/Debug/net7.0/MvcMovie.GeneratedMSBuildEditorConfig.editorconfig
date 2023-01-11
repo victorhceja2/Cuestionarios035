@@ -9,313 +9,313 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MvcMovie
 build_property.RootNamespace = MvcMovie
-build_property.ProjectDir = /Users/usuario/Cuestionarios035Net/MvcC035.1/
+build_property.ProjectDir = /Users/paparatz/Projects/Cuestionarios035/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/usuario/Cuestionarios035Net/MvcC035.1
+build_property.MSBuildProjectDirectory = /Users/paparatz/Projects/Cuestionarios035
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Campana/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Campana/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FtcGFuYS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Campana/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Campana/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FtcGFuYS9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Campana/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Campana/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FtcGFuYS9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Campana/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Campana/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FtcGFuYS9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Campana/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Campana/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FtcGFuYS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Contrato/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Contrato/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udHJhdG8vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Contrato/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Contrato/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udHJhdG8vRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Contrato/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Contrato/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udHJhdG8vRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Contrato/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Contrato/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udHJhdG8vRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Contrato/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Contrato/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udHJhdG8vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesD/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/CuesD/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0QvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesD/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/CuesD/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0QvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesD/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/CuesD/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0QvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesD/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/CuesD/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0QvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesD/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/CuesD/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0QvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesH/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/CuesH/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0gvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesH/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/CuesH/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0gvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesH/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/CuesH/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0gvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesH/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/CuesH/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0gvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/CuesH/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/CuesH/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vlc0gvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Foliador/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Foliador/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9saWFkb3IvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Foliador/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Foliador/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9saWFkb3IvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Foliador/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Foliador/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9saWFkb3IvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Foliador/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Foliador/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9saWFkb3IvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Foliador/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Foliador/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9saWFkb3IvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/HelloWorld/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/HelloWorld/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVsbG9Xb3JsZC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/HelloWorld/Welcome.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/HelloWorld/Welcome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVsbG9Xb3JsZC9XZWxjb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Home/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Home/Privacy.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Login/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Login/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Login/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Login/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Login/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Login/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Login/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Login/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Login/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Login/Logout.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Login/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vTG9nb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Movies/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Movies/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Movies/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Movies/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Movies/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Movies/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Movies/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Movies/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Movies/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Movies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Preguntas/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Preguntas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJlZ3VudGFzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Preguntas/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Preguntas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJlZ3VudGFzL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Preguntas/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Preguntas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJlZ3VudGFzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Preguntas/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Preguntas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJlZ3VudGFzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Preguntas/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Preguntas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJlZ3VudGFzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Proceso/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2Vzby9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Proceso/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2Vzby9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Proceso/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2Vzby9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Proceso/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2Vzby9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Proceso/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2Vzby9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso2/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Proceso2/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2VzbzIvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso2/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Proceso2/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2VzbzIvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso2/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Proceso2/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2VzbzIvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso2/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Proceso2/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2VzbzIvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Proceso2/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Proceso2/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2VzbzIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/ProcesoFormulario/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/ProcesoFormulario/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2Vzb0Zvcm11bGFyaW8vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/ProcesoFormulario/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/ProcesoFormulario/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2Vzb0Zvcm11bGFyaW8vRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/ProcesoFormulario/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/ProcesoFormulario/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2Vzb0Zvcm11bGFyaW8vRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/ProcesoFormulario/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/ProcesoFormulario/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2Vzb0Zvcm11bGFyaW8vRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/ProcesoFormulario/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/ProcesoFormulario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvY2Vzb0Zvcm11bGFyaW8vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/RespD/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/RespD/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVzcEQvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/RespD/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/RespD/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVzcEQvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/RespD/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/RespD/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVzcEQvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/RespD/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/RespD/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVzcEQvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/RespD/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/RespD/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVzcEQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Shared/Error.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Usuarios/Create.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Usuarios/Create2.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Usuarios/Create2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvQ3JlYXRlMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Usuarios/Delete.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Usuarios/Details.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Usuarios/Edit.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Usuarios/Index.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/_ViewImports.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/_ViewStart.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/usuario/Cuestionarios035Net/MvcC035.1/Views/Shared/_Layout.cshtml]
+[/Users/paparatz/Projects/Cuestionarios035/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bq18ea6s7x

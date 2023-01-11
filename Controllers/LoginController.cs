@@ -72,8 +72,9 @@ namespace MvcMovie.Controllers
             {
                 
                 var sQuery = from m in _context.Usuario
-                                        where m.Nombre == login.Usuario
-                                        && m.Password == login.Password
+                                        where (m.Nombre == login.Usuario
+                                        && m.Password == login.Password 
+                                        )
                                         orderby m.Nombre
                                     select new
                                     {
@@ -95,7 +96,35 @@ namespace MvcMovie.Controllers
                         }
                     }
                     else{
+                                        sQuery = from m in _context.Usuario
+                                        where (m.NumeroContrato == login.Usuario
+                                        && m.Password == login.Password 
+                                        )
+                                        orderby m.Nombre
+                                    select new
+                                    {
+                                        m.Id,
+                                        m.Nivel,
+                                        m.Nombre,
+                                        m.Password
+                                    };
+                    if(sQuery.Count() > 0){
+                        foreach(var reg in sQuery)
+                        {
+                            login.Id_Usuario = reg.Id; //Jalar el valor de usuario
+                            login.FechaLogin = DateTime.Now;
+                            login.Nivel = reg.Nivel; //Jalar el valor de usuario
+                            login.Usuario = reg.Nombre;
+                            login.Password = reg.Password;
+                            HttpContext.Session.Clear();
+                            HttpContext.Session.SetObject("ObjetoComplejo", login);
+                        }
+                    }
+                    else {
                         return View(login);
+
+                    }
+
                     }
 
                     _context.Add(login);
